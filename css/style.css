@@ -46,3 +46,11 @@ body {
     color: var(--text-color)
 
 }
+
+.logo {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+    
+}
