@@ -78,3 +78,9 @@ section {
     border: solid 1px var(--bg-color-02);
 }
 
+.homem, .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
