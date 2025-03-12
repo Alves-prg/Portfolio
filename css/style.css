@@ -5,8 +5,8 @@
 :root {
     --main-color: #3d1852;
     --text-color: white;
-    --bg-color-01: rgb(0, 0, 0);
-    --bg-color-02: rgb(58, 44, 44);
+    --bg-color-01: rgb(3, 228, 123);
+    --bg-color-02: rgb(241, 18, 18);
 }
 
 html {
