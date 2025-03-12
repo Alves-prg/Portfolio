@@ -70,3 +70,8 @@ body {
     border: solid 1px var(--bg-color-02);
 
 }
+
+span {
+    color: var(--main-color);
+}
+
