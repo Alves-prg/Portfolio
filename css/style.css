@@ -64,14 +64,16 @@ body {
 }
 
 .nav a:hover {
-    min-height: 100vh;
-    padding: 6rem 6rem 2rem;
-
-    border: solid 1px var(--bg-color-02);
-
-}
+    color: var(--main-color);
 
 span {
     color: var(--main-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem ;
+
+    border: solid 1px var(--bg-color-02);
 }
 
