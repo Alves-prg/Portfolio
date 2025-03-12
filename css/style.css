@@ -5,7 +5,7 @@
 :root {
     --main-color: #3d1852;
     --text-color: white;
-    --bg-color-01: rgb(3, 228, 123);
+    --bg-color-01: rgb(0, 0, 0);
     --bg-color-02: rgb(241, 18, 18);
 }
 
@@ -78,9 +78,13 @@ section {
     border: solid 1px var(--bg-color-02);
 }
 
-.homem, .about {
+.home, .about {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.foto-perfil img, .about-img img{
+    width: 100%;
 }
