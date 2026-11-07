@@ -363,3 +363,76 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid var(--line-color);
 }
+
+/* ===== Menu: item ativo e botão hambúrguer ===== */
+.nav a.ativo {
+    color: var(--accent-color);
+}
+
+.menu-btn {
+    display: none;
+    font-size: 2rem;
+    color: var(--text-color);
+    background: transparent;
+    cursor: pointer;
+}
+
+.form-aviso {
+    margin-top: 1rem;
+    color: var(--accent-color);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 900px) {
+    section {
+        padding: 6rem 2rem 2rem;
+    }
+
+    .home, .about {
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .home-conteudo {
+        padding: 1.5rem;
+    }
+
+    .home-conteudo h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        background: var(--bg-color-01);
+        border-bottom: 1px solid var(--line-color);
+    }
+
+    .nav.aberto {
+        display: flex;
+    }
+
+    .nav a {
+        padding: 1rem 2rem;
+    }
+
+    .input-box input {
+        width: 100%;
+    }
+
+    .foto-perfil img, .about-img img {
+        width: 240px;
+        height: 240px;
+    }
+}
