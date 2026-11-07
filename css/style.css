@@ -7,6 +7,8 @@
     --text-color: white;
     --bg-color-01: rgb(0, 0, 0);
     --bg-color-02: rgb(241, 18, 18);
+    --accent-color: #b784e0;
+    --line-color: rgba(255, 255, 255, 0.25);
 }
 
 html {
@@ -32,13 +34,13 @@ header {
     left: 0;
     width: 100%;
     padding: 1.1rem;
-    background-color: var(--bg-color-02);
+    background-color: var(--bg-color-01);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 
-    border: solid 1px var(--bg-color-02);
+    border-bottom: solid 1px var(--line-color);
 }
 
 body {
@@ -59,23 +61,19 @@ body {
     color: var(--text-color);
     padding: 0.5rem 1rem;
     transition: 0.4s;
-
-    border: solid 1px var(--bg-color-02);
 }
 
 .nav a:hover {
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 span {
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 section {
     min-height: 100vh;
     padding: 6rem 6rem 2rem ;
-
-    border: solid 1px var(--bg-color-02);
 }
 
 .home, .about {
@@ -85,6 +83,89 @@ section {
     align-items: center;
 }
 
-.foto-perfil img, .about-img img{
+.about-img img {
     width: 100%;
+}
+
+/* ===== Home: quadrado minimalista que se move ===== */
+.home-conteudo {
+    max-width: 560px;
+    padding: 2.5rem;
+    border: 1px solid var(--line-color);
+    animation: flutuar 5s ease-in-out infinite;
+    transition: border-color 0.4s;
+}
+
+.home-conteudo:hover {
+    border-color: var(--accent-color);
+}
+
+.home-conteudo h1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.home-conteudo h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.home-conteudo h3 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.home-conteudo p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.midia-social {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.midia-social a {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    transition: 0.4s;
+}
+
+.midia-social a:hover {
+    color: var(--accent-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    color: var(--text-color);
+    border: 1px solid var(--line-color);
+    transition: 0.4s;
+}
+
+.btn:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50%      { transform: translateY(-14px) rotate(0.6deg); }
+}
+
+/* ===== Home: foto redonda ===== */
+.foto-perfil img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--line-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-conteudo { animation: none; }
 }
