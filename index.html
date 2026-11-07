@@ -159,29 +159,26 @@
         <h2>Contact <span>Me</span></h2>
 
         <!-- caixa de formulário para preenchimento --> 
-        <form action="">
+        <form action="#" method="post">
             <!-- div para caixa -->
             <div class="input-box">
                 <!--  input do tipo texto e com a escrita no fundo, desaparecendo ao escrever -->
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
             <!-- div para input box de informações -->
             <div class="input-box">
                 <!-- input do tipo texto e com a escrita no fundo, desaparecendo ao escrever -->
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
    
             </div>
 
             <!-- Area de texto de mensagem -->
-            <textarea cols="30" rows="8" placeholder="Message"></textarea>
+            <textarea name="message" cols="30" rows="8" placeholder="Message" required></textarea>
 
             <!-- Botão de enviar -->
-            <a href="#" class="btn">Send Message</a>
-
-
-
+            <button type="submit" class="btn">Send Message</button>
         </form>
       </section>
 
@@ -193,10 +190,10 @@
 
         <div class="about-content">
             <h3>About Me</h3>
-            <h1>Full- Stack and Mobile <span>Developer</span></h1>
+            <h1>Full-Stack and Mobile <span>Developer</span></h1>
 
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae officia explicabo molestiae, rerum odio voluptatum, exercitationem vitae veritatis quaerat eius iure suscipit, voluptatem perspiciatis omnis facilis a sequi! Quasi iste animi facere voluptates nemo expedita quo saepe totam corrupti?
+                I am a developer focused on building clean, fast and responsive applications for the web and mobile. I enjoy turning ideas into simple interfaces and learning new technologies along the way.
             </p>
 
             <a href="#" class="btn">Read More</a>
@@ -204,7 +201,7 @@
     </section>
 
     <footer>
-        <p>Copyright &copy; 2024 by Vinicius Alves, All Rights Reserved</p>
+        <p>Copyright &copy; 2026 by Vinicius Alves, All Rights Reserved</p>
     </footer>
 </body>
 </html>
