@@ -169,3 +169,99 @@ section {
 @media (prefers-reduced-motion: reduce) {
     .home-conteudo { animation: none; }
 }
+/* ===== Títulos de seção ===== */
+.service h2, .portfolio h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+/* ===== Serviços: cards só com borda ===== */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.service-box {
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 1px solid var(--line-color);
+    transition: 0.4s;
+}
+
+.service-box:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-8px);
+}
+
+.service-box i {
+    font-size: 3.2rem;
+    color: var(--accent-color);
+}
+
+.service-box h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.service-box p {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Projetos ===== */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-box {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line-color);
+    aspect-ratio: 4 / 3;
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* camada que sobe na foto ao passar o mouse */
+.portfolio-camada-baixo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid var(--accent-color);
+    transform: translateY(100%);
+    transition: transform 0.4s;
+}
+
+.portfolio-box:hover .portfolio-camada-baixo {
+    transform: translateY(0);
+}
+
+.portfolio-camada-baixo h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.portfolio-camada-baixo p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.portfolio-camada-baixo a {
+    font-size: 1.4rem;
+    color: var(--accent-color);
+}
