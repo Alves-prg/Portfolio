@@ -265,3 +265,101 @@ section {
     font-size: 1.4rem;
     color: var(--accent-color);
 }
+
+/* ===== Contato: formulário minimalista ===== */
+.contato h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.contato form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-box input {
+    width: 49%;
+}
+
+.contato input,
+.contato textarea {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    font: inherit;
+    font-weight: 300;
+    color: var(--text-color);
+    background: transparent;
+    border: 1px solid var(--line-color);
+    transition: border-color 0.4s;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    border-color: var(--accent-color);
+}
+
+.contato textarea {
+    width: 100%;
+    resize: none;
+    margin-bottom: 1.5rem;
+}
+
+.contato ::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* botão <button> com o mesmo visual do .btn */
+button.btn {
+    font: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* ===== About ===== */
+.about-img img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--line-color);
+}
+
+.about-content {
+    max-width: 560px;
+}
+
+.about-content h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--accent-color);
+}
+
+.about-content h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.about-content p {
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+/* ===== Rodapé ===== */
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--line-color);
+}
